@@ -39,7 +39,7 @@
                     <label v-if="FromMenu === false">
                         <h4>From</h4>
                     </label>
-                    <input type="text" v-model="fromAmount" v-if="FromMenu === false"/>
+                    <input type="text" v-model="fromAmount" v-if="FromMenu === false" />
                 </div>
                 <button id="change" @click="changeCurrencies">
                     <i class="bi bi-arrow-left-right"></i>
@@ -114,15 +114,19 @@
             };
         },
         methods: {
-            currencyChange(){
-                fetch(
-                    `https://v6.exchangerate-api.com/v6/4f97de937a2f5ca4c59a5c1c/latest/${this.fromSelected && this.fromSelected.code}`
-                    )
-                .then((res)=> res.json())
-                .then((data)=> {
-
-                    this.toAmount = data.conversion_rates[this.toSelected.code].toFixed(2)
-                    this.toAmount = this.fromAmount * this.toAmount
+            currencyChange() {
+                fetch(`https://v6.exchangerate-api.com/v6/4f97de937a2f5ca4c59a5c1c/latest/${this.fromSelected && this.fromSelected.code}`)
+                .then((res) => res.json())
+                .then((data) => {
+                    if (this.fromAmount === null || this.fromAmount === undefined) {
+                    window.alert("გთხოვთ შეავსოთ საწყისი ველი");
+                    } else {
+                    this.toAmount = data.conversion_rates[this.toSelected.code];
+                    this.toAmount = this.fromAmount * Number(this.toAmount.toFixed(2));
+                    }
+                })
+                .catch((error) => {
+                    console.log("Error fetching currency data:", error);
                 });
             },
             GetEUR(){
@@ -176,7 +180,12 @@
                 this.toSelected = currency
                 this.active = "active"
                 this.ToMenu = false
-            }
+            },
+            PressEter(event){
+                if(event.key === "Enter"){
+                    this.currencyChange()
+                }
+            },
         },
         mounted(){
             this.GetEUR();
@@ -184,8 +193,8 @@
             this.GetGBP();
             document.title = this.route.name
         },
-        computed: {
-            
+        created(){
+            window.addEventListener("keydown", this.PressEter)
         }
     };
 </script>
