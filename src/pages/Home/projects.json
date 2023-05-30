@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Snake",
+        "href": "/",
+        "image": "ColorPicker.jpg"
+    },
+    {
+        "name": "ColorPicker",
+        "href": "/colorpicker",
+        "image": "ColorPicker.jpg"
+    }
+]

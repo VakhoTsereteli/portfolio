@@ -1,0 +1,58 @@
+@import url(../../assets/fonts/fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Jura", "Tkt";
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(#050223, #111548);
+}
+
+header{
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.logo h3{
+    margin-left: 20px;
+}
+
+.logo h3 span{
+    font-size: 20px;
+}
+
+#links{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: 7%;
+    margin-right: 1%;
+    font-size: 28px;
+}
+
+#links i{
+    color: white;
+    margin-right: 28px;
+}
+

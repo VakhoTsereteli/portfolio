@@ -1,0 +1,95 @@
+.main{
+    margin-top: 150px;
+    width: 100%;
+    height: 100vh;
+}
+
+.colorpicker{
+    width: 500px;
+    height: 450px;
+    background-color: rgb(9, 6, 38);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.select{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 60%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+#picker{
+    height: 40px;
+    width: 100px;
+    margin-top: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copy{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 70, 192);
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+#colorCode{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    cursor: vertical-text;
+}
+
+.colored{
+    width: 95%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.main_colors{
+    width: 75%;
+    height: 60px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(11, 4, 53);
+    border-radius: 8px;
+}
+
+.main_color{
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}

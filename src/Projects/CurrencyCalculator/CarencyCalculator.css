@@ -1,0 +1,168 @@
+.main{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+img{
+    width: 60px;
+    height: 30px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.currencies{
+    width: 80%;
+    height: 120px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+}
+
+.currencies > div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: block;
+}
+
+
+.calculator{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.calculator > div{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    z-index: 999;
+}
+
+.calculator > div > div{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+}
+
+.calculator > div > div > div{
+    max-height: 180px; /* Adjust the maximum height as per your requirements */
+    max-width: 400px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
+    background-color: rgb(9, 6, 38);
+    border-radius: 7px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.calculator > div > div > div li{
+    display: flex;
+    height: 50px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+
+.calculator > div > div > div li:hover{
+    background-color: white;
+    color: black;
+}
+
+.calculator > div > div > label{
+    text-align: left;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.calculator > div > div > input{
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: rgb(0, 70, 192) solid 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.calculator > div > div > div li img{
+    width: 60px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.calculator > div > div > div li h2{
+    font-size: 30px;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.choose{
+    width: 250px;
+    height: 70px;
+    font-size: 35px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 70, 192);
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.arrow{
+    float: right;
+    margin-right: 10px;
+}
+
+#convert{
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 70, 192);
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#change{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 70, 192);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+#convert:hover, #change:hover{
+    box-shadow:0 0 30px rgb(0, 70, 192);
+}
+
